@@ -3,6 +3,7 @@
   <head>
     <title>Eduardson Cortez - Personal Page</title>
      <link rel="stylesheet" href="style1.css">
+     <script src="script.js" defer></script> 
   </head>
 
 <body>
@@ -61,24 +62,6 @@
       <button type="submit">Submit</button>
     </fieldset>
   </form>
-
-   <script>
-    // Get the form element
-    const form = document.getElementById('feedbackForm');
-
-    // Listen for form submission
-    form.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent actual form submission
-
-      // Get input values
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const comments = document.getElementById('comments').value;
-
-      // Show the data using alert (or you can use console.log)
-      alert(`Thank you for your message!\n\nName: ${name}\nEmail: ${email}\nMessage: ${comments}`);
-    });
-  </script>
   
 </body>
 </html>
